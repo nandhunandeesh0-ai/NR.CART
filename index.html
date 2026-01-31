@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Buy Bazaar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<div class="quick-options">
+
+  <div class="quick-card blue">
+   
+    <strong><a style="text-decoration: none;color: black;" href="index.html" class="option">Buy Bazaar</a></strong>
+    
+  </div>
+
+  <div class="quick-card">
+
+    <strong><a style="text-decoration: none;color: black;" href="Grocery.html" class="option">Grocery</strong>
+  </div></a>
+
+  <div class="quick-card">
+    
+    <strong><a style="text-decoration: none;color: black;" href="Fuel.html" class="option">Fuel</a></strong>
+  </div>
+
+  <div class="quick-card">
+   
+    <strong><a style="text-decoration: none;color: black;" href="Courier.html" class="option">Courier</a></strong>
+  </div>
+
+  <div class="quick-card">
+   
+    <strong><a style="text-decoration: none;color: black;" href="Travels.html" class="option">Travels</a></strong>
+  </div>
+
+  <div class="quick-card">
+  
+    <strong><a style="text-decoration: none;color: black;" href="Cyber Work.html" class="option">Cyber Work</a></strong>
+  </div>
+
+</div>
+
+
+<!-- LOCATION BAR -->
+<div class="location-bar">
+  <i class="fa-solid fa-house"></i>
+  <span>HOME · Vinayak Layout, 5th Cross</span>
+  <i class="fa-solid fa-chevron-down"></i>
+  <div class="coin">
+    <i class="fa-solid fa-bolt"></i> 0
+  </div>
+</div>
+
+<!-- SEARCH -->
+<div class="search-box">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="text" placeholder="watches">
+  <i class="fa-solid fa-camera"></i>
+</div>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<div class="categories-scroll">
+
+  <div class="cat">
+    <i class="fa-solid fa-shirt"></i>
+    <p>Fashion</p>
+  </div>
+
+  <div class="cat">
+    <i class="fa-solid fa-mobile-screen"></i>
+    <p>Mobiles</p>
+  </div>
+
+  <div class="cat">
+    <i class="fa-solid fa-heart"></i>
+    <p>Beauty</p>
+  </div>
+
+  <div class="cat">
+    <i class="fa-solid fa-laptop"></i>
+    <p>Electronics</p>
+  </div>
+
+  <div class="cat">
+    <i class="fa-solid fa-laptop"></i>
+    <p>Furniture</p>
+  </div>
+
+  <div class="cat">
+    <i class="fa-solid fa-laptop"></i>
+    <p>Books</p>
+  </div>
+
+  <div class="cat">
+    <i class="fa-solid fa-house"></i>
+    <p>Toys</p>
+  </div>
+
+  <div class="cat">
+    <i class="fa-solid fa-tv"></i>
+    <p>Appliances</p>
+  </div>
+
+  <div class="cat">
+    <i class="fa-solid fa-basket-shopping"></i>
+    <p>Auto Accessories</p>
+  </div>
+
+</div>
+
+
+</div>
+<!-- BANNER SLIDER -->
+<div class="slider-container">
+  <div class="slider" id="slider">
+
+    <div class="slide active">
+      <img src="https://rukminim1.flixcart.com/fk-p-flap/1620/270/image/1dea02c920c94a83.png?q=80" />
+    </div>
+
+    <div class="slide">
+      <img src="https://rukminim1.flixcart.com/fk-p-flap/1620/270/image/9e48bbeaa5a01f0d.jpg?q=80" />
+    </div>
+
+    <div class="slide">
+      <img src="https://rukminim1.flixcart.com/fk-p-flap/1620/270/image/1fe2e3a6af22df69.png?q=80" />
+    </div>
+
+  </div>
+
+  <!-- DOTS -->
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+
+<script>
+  let index = 0;
+  const slides = document.querySelectorAll(".slide");
+  const dots = document.querySelectorAll(".dot");
+  const slider = document.getElementById("slider");
+
+  function showSlide(i) {
+    index = i;
+    slider.style.transform = `translateX(-${index * 100}%)`;
+
+    dots.forEach(d => d.classList.remove("active"));
+    dots[index].classList.add("active");
+  }
+
+  setInterval(() => {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+  }, 3000);
+</script>
+<div class="suggested-section">
+  <h2 class="section-title">Suggested For You</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/slipper-flip-flop/e/y/q/8-5-pro-107-propock-brown-original-imagh9q2u4zghzbb.jpeg">
+      <p class="title">Prodock Men Flip Flops</p>
+      <p class="price">
+        <span class="old">₹1,999</span>
+        <span class="new">₹372</span>
+      </p>
+      <p class="buy">Buy at ₹301</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/slipper-flip-flop/l/x/u/9-pro-311-propock-brown-original-imagh9q2tsguzxht.jpeg">
+      <p class="title">Kelsey Men Slippers</p>
+      <p class="price">
+        <span class="old">₹2,999</span>
+        <span class="new">₹792</span>
+      </p>
+      <p class="buy">Buy at ₹676</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/slipper-flip-flop/f/z/q/7-calibre-black-original-imagj5w9tf3gfwhk.jpeg">
+      <p class="title">CALIBREL Men Slippers</p>
+      <p class="price">
+        <span class="old">₹2,499</span>
+        <span class="new">₹451</span>
+      </p>
+      <p class="buy">Buy at ₹352</p>
+    </div>
+
+    
+    
+    <div class="product-card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/sandal/7/n/u/8-azor-1-black-azzaro-original-imagzzq4jefhhw4c.jpeg">
+      <p class="title">Azzaro Black Men Slippers</p>
+      <p class="price">
+        <span class="old">₹2,499</span>
+        <span class="new">₹570</span>
+      </p>
+      <p class="buy">Buy at ₹476</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/sandal/7/n/u/8-azor-1-black-azzaro-original-imagzzq4jefhhw4c.jpeg">
+      <p class="title">Azzaro Black Men Slippers</p>
+      <p class="price">
+        <span class="old">₹2,499</span>
+        <span class="new">₹570</span>
+      </p>
+      <p class="buy">Buy at ₹476</p>
+    </div>
+
+    <div class="product-card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/sandal/7/n/u/8-azor-1-black-azzaro-original-imagzzq4jefhhw4c.jpeg">
+      <p class="title">Azzaro Black Men Slippers</p>
+      <p class="price">
+        <span class="old">₹2,499</span>
+        <span class="new">₹570</span>
+      </p>
+      <p class="buy">Buy at ₹476</p>
+    </div>
+
+  </div>
+</div>
+<div class="product-section">
+
+  <div class="product-grid">
+
+    <!-- PRODUCT 1 -->
+    <div class="product-card">
+      <span class="rating">4.3 ★ (36,850)</span>
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/mobile/y/9/o/m7-pro-5g-poco-original-imagwmq4h5ngf7xy.jpeg">
+      <p class="title">POCO M7 Pro 5G</p>
+      <p class="price">
+        <span class="old">₹18,999</span>
+        <span class="new">₹13,499</span>
+      </p>
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="product-card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/t-shirt/y/t/p/m-tazo-original-imagwsyhhcqgzdht.jpeg">
+      <p class="title">TAZO Men Solid Polo Neck</p>
+      <p class="price">
+        <span class="old">₹1,299</span>
+        <span class="new">₹278</span>
+      </p>
+    </div>
+
+    <!-- PRODUCT 3 -->
+    <div class="product-card">
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/shirt-pant-combo/x/8/z/jumi-original-imagxhtj2yheqzzm.jpeg">
+      <p class="title">Jumi Enterprise Men Cotton Blend</p>
+      <p class="price">
+        <span class="old">₹1,999</span>
+        <span class="new">₹483</span>
+      </p>
+    </div>
+
+    <!-- PRODUCT 4 -->
+    <div class="product-card">
+
+      <img src="https://rukminim1.flixcart.com/image/612/612/xif0q/sandal/g/l/m/trekiva-original-imagzkwrdy7qupaz.jpeg">
+      <p class="title">TREKIVA Premium Sandal</p>
+      <p class="price">
+        <span class="old">₹677</span>
+        <span class="new">₹542</span>
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+</body>
+</html>
